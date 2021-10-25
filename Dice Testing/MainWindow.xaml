@@ -1,0 +1,23 @@
+﻿<Window x:Class="Dice_Testing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dice_Testing"
+        mc:Ignorable="d"
+        Title="Dice Testing" Height="500" Width="275">
+    <Grid>
+        <TextBox Name="numOfDiceTextBox" HorizontalAlignment="Left" Height="23" Margin="98,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" TextAlignment="Center"/>
+        <Label Content="# of Dice" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="# of Sides" HorizontalAlignment="Left" Margin="10,44,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="numOfSidesTextBox" HorizontalAlignment="Left" Height="23" Margin="98,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" TextAlignment="Center"/>
+        <Label Content="Success Value" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="successValueTextBox" HorizontalAlignment="Left" Height="23" Margin="98,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" TextAlignment="Center"/>
+        <CheckBox Name="explodingDice" Content="Exploding Dice" HorizontalAlignment="Left" Margin="152,10,0,0" VerticalAlignment="Top"/>
+        <Button Name="calculateButton" Content="Calculate" HorizontalAlignment="Center" Margin="0,0,0,50" VerticalAlignment="Bottom" Width="75" Click="calculateButton_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="178,31,0,0" TextWrapping="Wrap" Text="Dice Explode!" VerticalAlignment="Top" Name="diceExplodeNotification" Visibility="Hidden"/>
+        <ScrollViewer  Name="resultsViewer" HorizontalAlignment="Center" Height="275" Margin="0,25,0,0" VerticalAlignment="Center" Width="240" BorderThickness="2" BorderBrush="Black" FontWeight="SemiBold"/>
+        <Label Name="userErrorNotification" HorizontalAlignment="Center" Margin="0,415,0,0" Content="Unable to Calculate" VerticalAlignment="Center" Foreground="Red" Width="120" Visibility="Hidden" Height="25"/>
+
+    </Grid>
+</Window>
